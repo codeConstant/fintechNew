@@ -18,7 +18,7 @@ user registration and authentication. employee creation, update, status update, 
 
 ## 🧱 Tech Stack
 
-- Java 17+
+- Java 17
 - Spring Boot 3+
 - Spring Data JPA
 - Spring Security + JWT
@@ -27,22 +27,15 @@ user registration and authentication. employee creation, update, status update, 
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Java 17+
-- Maven or Gradle
-- PostgreSQL (or H2 in dev)
 
 ## Endpoints
-POST   /employee/create         → Create a new employee
-PUT    /employee/update         → Update employee info
-GET    /employee/fetchOne/{id} → Get employee by ID
-GET    /employee/fetchAll       → List all employees
-PUT    /employee/assignRole     → Assign a role to an employee
-PUT    /employee/updateStatus   → Update employee onboarding/KYC status
-POST   /employee/assignTask     → Assign onboarding tasks
+- POST   /employee/create         → Create a new employee
+- PUT    /employee/update         → Update employee info
+- GET    /employee/fetchOne/{id} → Get employee by ID
+- GET    /employee/fetchAll       → List all employees
+- POST    /employee/assignRole     → Assign a role to an employee
+- POST    /employee/updateStatus   → Update employee onboarding/KYC status
+- POST   /employee/assignTask     → Assign onboarding tasks
 
-POST   /user/register           → Register system user (for login)
-POST   /user/authenticate       → Authenticate and retrieve JWT
+- POST   /user/register           → Register system user (for login)
+- POST   /user/authenticate       → Authenticate and retrieve JWT
